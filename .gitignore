@@ -1,5 +1,7 @@
 .DS_Store
 .bundle
-/*.yml
+.docker_build
 /*.pdf
+/*.yml
+/fonts/*
 /vendor/bundle
