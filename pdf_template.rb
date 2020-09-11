@@ -3,13 +3,10 @@
 
 require 'rubygems'
 require 'bundler/setup'
-
 require 'cairo'
 require 'pango'
 require 'poppler'
-
 require 'yaml'
-require 'erb'
 
 class PdfTemplate
   def initialize(yaml_path)
