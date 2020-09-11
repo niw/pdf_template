@@ -39,9 +39,9 @@ RUN apk --no-cache add --virtual .dev \
   cd /usr/share/poppler/poppler-data-0.4.7 && make install prefix=/usr && rm -rf /usr/share/poppler/poppler-data-0.4.7 && \
   apk del .dev
 
-COPY pdf_template.rb /app
-
 COPY fontdir.conf /etc/fonts/conf.d/00-fontdir.conf
+
+COPY pdf_template.rb /app
 
 VOLUME /workdir
 VOLUME /fonts
